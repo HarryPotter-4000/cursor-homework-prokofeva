@@ -3,7 +3,7 @@ body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 h1 {
-    text-align: center;
+    padding: 16px 16px 8px;
 }
 li {
     padding: 8px;
