@@ -16,10 +16,8 @@ const change = 500 - basket;
 const avg = (basket / 3).toFixed(2);
 const discount = Math.floor(Math.random() * 101);
 const amount = (basket - basket * (discount / 100)).toFixed(2);
-const costPrice = integerAmount / 2;
-const profit = ((basket / 2) - Math.round(basket * discount / 100)).toFixed(2);
-// const profit = costPrice - Math.round(integerAmount * discount / 100);
-
+const costPrice = (basket / 2);
+const profit = (costPrice - Math.round(basket * discount / 100)).toFixed(2);
 const div = document.querySelector('div');
 div.innerHTML = 
     `<ul>
