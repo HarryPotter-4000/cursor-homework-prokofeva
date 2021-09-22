@@ -13,11 +13,11 @@ function isEvenNumber() {
     return integerAmount % 2 === 0 ? true : false;
 };
 const change = 500 - basket;
-const avg = (basket / 3).toFixed(2);
+const avg = parseInt((basket / 3).toFixed(2), 10);
 const discount = Math.floor(Math.random() * 101);
-const amount = (basket - basket * (discount / 100)).toFixed(2);
+const amount = parseInt((basket - basket * (discount / 100)).toFixed(2), 10);
 const costPrice = (basket / 2);
-const profit = (costPrice - Math.round(basket * discount / 100)).toFixed(2);
+const profit = parseInt((costPrice - Math.round(basket * discount / 100)).toFixed(2), 10);
 const div = document.querySelector('div');
 div.innerHTML = 
     `<ul>
