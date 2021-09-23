@@ -10,15 +10,15 @@ const basket = bread + butter + cheese;
 const integerAmount = Math.floor(bread) + Math.floor(butter) + Math.floor(cheese);
 const roundToHundreds = Math.round(integerAmount / 100) * 100;
 function isEvenNumber() {
-    return integerAmount % 2 === 0 ? true : false;
+    return integerAmount % 2 === 0;
 };
 const change = 500 - basket;
 const avg = parseInt((basket / 3).toFixed(2), 10);
 const discount = Math.floor(Math.random() * 101);
 const amount = parseInt((basket - basket * (discount / 100)).toFixed(2), 10);
-const costPrice = (basket / 2);
+const costPrice = basket / 2;
 const profit = parseInt((costPrice - Math.round(basket * discount / 100)).toFixed(2), 10);
-const div = document.querySelector('div');
+const div = document.querySelector('.list');
 div.innerHTML = 
     `<ul>
         <li>Ціна на хліб: ${bread} гривень;</li>
@@ -35,4 +35,4 @@ div.innerHTML =
         <li>Випадкова знижка: ${discount}%;</li>
         <li>Сума до оплати : ${amount} гривень;</li>
         <li>Чистий прибуток: ${profit} гривень;</li>
-    `;
+    </ul>`;
