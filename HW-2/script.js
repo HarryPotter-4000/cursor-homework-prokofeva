@@ -1,4 +1,3 @@
-
 function getNumberInput(label) {
     let answer;
     do {
@@ -10,10 +9,9 @@ function getNumberInput(label) {
     return parseInt(answer, 10);
 }
 
-
-let firstNumber = getNumberInput('Введите целое число N');
-let secondNumber = getNumberInput('Введите целое число M');
-const shouldSkipEvenNumbers = confirm('Пропускать парные числа?');
+let firstNumber = getNumberInput('Please enter an integer N');
+let secondNumber = getNumberInput('Please enter an integer M');
+const shouldSkipEvenNumbers = confirm('Skip even numbers?');
 
 let sumOfNumbers = 0;
 
@@ -24,6 +22,6 @@ if ( firstNumber < secondNumber) {
         }
         sumOfNumbers += number;
     }
-    alert(`Сумма чисел: ${sumOfNumbers}`);
+    alert(`Sum of numbers: ${sumOfNumbers}`);
 }
 
