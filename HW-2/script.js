@@ -1,7 +1,7 @@
 function getNumberInput(label) {
     let answer;
     do {
-        answer = prompt(label, '');
+        answer = prompt(label, '').trim();
     } while (answer.length === 0 
         || isNaN(parseInt(answer, 10))
         || Number.isInteger(+answer) === false
