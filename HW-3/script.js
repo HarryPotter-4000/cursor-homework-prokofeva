@@ -49,7 +49,7 @@ const correctName = name => name.toLowerCase().split('').map((letter, index) => 
 
 // 4
 const getIssue = function(salary) {
-  const tax = (18 + 1.5)/100;
+  const tax = (18 + 1.5) / 100;
   return salary - salary * tax;
 }
 
