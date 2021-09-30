@@ -1,0 +1,8 @@
+body {
+  padding: 24px;
+  line-height: 168%;
+  font-family: 'Courier New', Courier, monospace;
+  background: linear-gradient( #dcd5d5, transparent 1px), linear-gradient(90deg, #dddbdb, transparent 1px);
+  background-size: 16px 16px;
+  background-position: center center;
+}
