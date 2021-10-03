@@ -50,7 +50,7 @@ console.log(grades);
 //4 - Поставте кожній парі випадкову оцінку(від 1 до 5) за проєкт
 const gradesToPair = (pairs) => {
   return pairs.map((pair, i) => {
-    return [...pairs[i], (Math.floor(Math.random() * 6))];
+    return [...pairs[i], (Math.floor(Math.random() * 5) + 1)];
   })
 }
 const graduatedPairsWithThemes = gradesToPair(assineProjectsToPairs(pairs, themes));
