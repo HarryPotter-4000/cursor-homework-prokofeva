@@ -9,12 +9,12 @@ const getPairs = (students) => {
     if (student[student.length - 1] === 'а') {
       const unfinishedPairIndex = pairs.findIndex(pair => pair.length === 1);
       if (unfinishedPairIndex === -1) {
-        pairs.push([, student])
+        pairs.push([, student]);
       } else {
-        pairs[unfinishedPairIndex].push(student)
+        pairs[unfinishedPairIndex].push(student);
       }
     } else {
-      const unfinishedPairIndex = pairs.findIndex(pair => pair.length === 2 && !pair[0])
+      const unfinishedPairIndex = pairs.findIndex(pair => pair.length === 2 && !pair[0]);
       if (unfinishedPairIndex === -1) {
         pairs.push([student]);
       } else {
@@ -53,8 +53,8 @@ const gradesToPair = (pairs) => {
     return [...pairs[i], (Math.floor(Math.random() * 6))];
   })
 }
-const graduatedPairsWithThemes = gradesToPair(assineProjectsToPairs(pairs, themes))
-console.log(graduatedPairsWithThemes)
+const graduatedPairsWithThemes = gradesToPair(assineProjectsToPairs(pairs, themes));
+console.log(graduatedPairsWithThemes);
 
 const result = document.querySelector('.result');
 result.innerHTML = 
