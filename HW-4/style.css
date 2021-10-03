@@ -1,8 +1,8 @@
 .result {
   font-size: 14px;
   margin: 0 auto;
-  padding: 24px 0;
-  width: 90%;
+  padding: 24px 8px;
+  width: 350px;
   color: rgb(49, 48, 48);
 }
 span {
