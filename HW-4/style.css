@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+body {
+  padding: 24px 8px;
+  font-size: 14px;
+}
+.result {
+  color: rgb(49, 48, 48);
+}
+span {
+  color: rgb(252, 0, 0);
+  font-style: italic;
+}
