@@ -28,7 +28,6 @@ const pairs = getPairs(students);
 console.log(pairs);
 
 //2 - Зіставте пари з попереднього завдання та теми проєктів, над якими студенти будуть працювати. 
-
 const assineProjectsToPairs = (pairs, themes) => {
   return pairs.map((pair, i) => {
     const theme = (themes.length > i) ? themes[i] : themes[0];
