@@ -1,4 +1,4 @@
-// 1 - getRandomArray(15, 1, 100)
+// 1 - getRandomArray(15, 1, 100) with for...
 // const getRandomArray = (length, min, max) => {
 //   const result = [];
 //   const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
