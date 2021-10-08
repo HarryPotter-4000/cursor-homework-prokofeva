@@ -151,19 +151,6 @@ function divideByThree(word) {
 const syllables = divideByThree("Commander");
 console.log(syllables);
 
-// 10 - Створіть функцію generateCombinations(word)
-// function generateCombinations(word) {
-//   let result = [];
-//   for (let letter of word) {
-//     result.push(letter);
-//   }
-//   return result;
-// }
-// const allCombitationOfWord = generateCombinations("man");
-// console.log(allCombitationOfWord);
-// console.log(generateCombinations("ol"));
-
-
 const result = document.querySelector('.result');
 result.innerHTML = 
   `<ol>
