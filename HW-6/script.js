@@ -180,8 +180,4 @@ result.innerHTML =
 
     <li>divideByThree("Commander")</li>
     <p>${syllables}</p>
-
-
   </ol>`;
-  // <li>generateCombinations(word)</li>
-  // <p>${allCombitationOfWord}</p>
