@@ -120,7 +120,14 @@ function replaceBadWords(string) {
     let length = word.length;
     let star = '*'.repeat(length);
     if (string.toLowerCase().includes(word)) {
-      result = result.replaceAll(word, star);
+      result = result.toLowerCase().replaceAll(word.toLocaleLowerCase(), star);
+      
+    }
+  };
+  result = result[0].toUpperCase() + result.slice(1);
+  for (let i = 1; i < result.length - 1; i++) {
+    if (result[i] === '?' || result[i] === '!' || result[i] === '.' ) {
+      result = result.replace(result[(i + 2)], result[(i + 2)].toUpperCase());
     }
   }
   return result;
