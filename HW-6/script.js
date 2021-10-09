@@ -132,7 +132,7 @@ function replaceBadWords(string) {
   }
   return result;
 }
-const onlyGoodWords = replaceBadWords("Are you fucking kidding, shit, fuck? He's an asshole, but you'll get used to it.");
+const onlyGoodWords = replaceBadWords("Are you fucking kidding, shit, fuck? He's an asshole, but you'll get used to it. Shit, shit, fuck!");
 console.log(onlyGoodWords);
 
 // 9 - Створіть функцію divideByThree(word)
