@@ -114,7 +114,7 @@ console.log(numbersDivideFive);
 // 8 - Створіть функцію replaceBadWords(string) – яка 1) розіб'є фразу на слова, 2) замінить погані слова на зірочки (*).
 function replaceBadWords(string) {
   const shitWords = ['shit', 'fuck', 'asshole'];
-  let result = string;
+  let result = string.toLowerCase();
 
   for (let word of shitWords) {
     let length = word.length;
