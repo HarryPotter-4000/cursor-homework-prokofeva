@@ -151,6 +151,33 @@ function divideByThree(word) {
 const syllables = divideByThree("Commander");
 console.log(syllables);
 
+// 10 - Створіть функцію generateCombinations(word)
+function generateCombinations(word) {
+  const letters = word.toLowerCase().split('');
+  const combinations = [];
+  for (let i = 0; i < letters.length; i++) {
+    for (let j = 0; j < letters.length; j++) {
+      if (j !== i) {
+        const combinationLetters = [];
+        combinationLetters.push(letters[i]);
+        combinationLetters.push(letters[j]);
+        for (let k = 0; k < letters.length; k++) {
+          if (k !== i && k !== j) {
+            combinationLetters.push(letters[k]);
+          }
+        }
+        const combination = combinationLetters.join('')
+        if (!combinations.includes(combination)) {
+          combinations.push(combination);
+        }
+      }
+    }
+  }
+  return combinations;
+}
+const allCombination = generateCombinations("man");
+console.log(allCombination);
+
 const result = document.querySelector('.result');
 result.innerHTML = 
   `<ol>
@@ -180,4 +207,7 @@ result.innerHTML =
 
     <li>divideByThree("Commander")</li>
     <p>${syllables}</p>
+
+    <li>generateCombinations("man")</li>
+    <p>${allCombination}</p>
   </ol>`;
