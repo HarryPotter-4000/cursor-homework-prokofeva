@@ -113,19 +113,19 @@ console.log(numbersDivideFive);
 
 // 8 - Створіть функцію replaceBadWords(string) – яка 1) розіб'є фразу на слова, 2) замінить погані слова на зірочки (*).
 function replaceBadWords(string) {
-  const shitWords = ['shit', 'fuck'];
-  let result = '';
+  const shitWords = ['shit', 'fuck', 'asshole'];
+  let result = string;
 
   for (let word of shitWords) {
     let length = word.length;
     let star = '*'.repeat(length);
     if (string.includes(word)) {
-      result = string.replaceAll(word, star);
+      result = result.replaceAll(word, star);
     }
   }
   return result;
 }
-const onlyGoodWords = replaceBadWords("Are you fucking kidding?");
+const onlyGoodWords = replaceBadWords("Are you fucking kidding? He's an asshole, but you'll get used to it. Shit, shit, fuck!");
 console.log(onlyGoodWords);
 
 // 9 - Створіть функцію divideByThree(word)
