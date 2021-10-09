@@ -120,7 +120,7 @@ function replaceBadWords(string) {
     let length = word.length;
     let star = '*'.repeat(length);
     if (string.includes(word)) {
-      result = string.replace(word, star);
+      result = string.replaceAll(word, star);
     }
   }
   return result;
