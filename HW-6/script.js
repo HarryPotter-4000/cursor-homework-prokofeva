@@ -52,9 +52,8 @@ function getAverage(...numbers) {
   const sumOfNumbers = numbers.reduce((result, num) => {
     if (Number.isInteger(num)) {
       return result + num;
-    } else {
-      return result;
     }
+    return result;
   });
   const average = sumOfNumbers / [...numbers].length;
   return average;
@@ -150,8 +149,6 @@ function divideByThree(word) {
   }
   if (word.length % 3 !== 0) {
     result.push(word.slice(-rest));
-  } else {
-    result;
   }
   return result;
 }
