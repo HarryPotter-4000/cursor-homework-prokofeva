@@ -25,11 +25,15 @@ console.log(`Податки повні в Латвії: ${getTotalTaxes.call(lat
 console.log(`Податки повні в Литві: ${getTotalTaxes.call(litva)}`);
 
 const printRandomSalaryPerCountry = function () {
-  const salary = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
+  const minSalary = 1500;
+  const maxSalary = 2000;
+  const salary = Math.floor(Math.random() * (maxSalary - minSalary + 1)) + minSalary;
+  const taxes = +(salary * this.tax).toFixed(2);
+  const profit = +(salary - taxes).toFixed(2);
   const result = {
     'salary': salary,
-    'taxes': salary * this.tax,
-    'profit': salary - salary * this.tax,
+    'taxes': taxes,
+    'profit': profit,
   };
   console.log(result);
 }
@@ -45,7 +49,13 @@ getMySalary();
 const result = document.querySelector('.result');
 result.innerHTML = `
     <p>1. Податки з 1000 гр в Україні: ${getMyTaxes.call(ukraine, 1000)}</p>
+    <p>Податки з 1000 гр в Латвії: ${getMyTaxes.call(latvia, 1000)}</p>
+    <p>Податки з 1000 гр в Литві: ${getMyTaxes.call(litva, 1000)}</p>
     <p>2. Податки з зарплати в Україні: ${getMiddleTaxes.call(ukraine)}</p>
+    <p>Податки з зарплати в Латвії: ${getMiddleTaxes.call(latvia)}</p>
+    <p>Податки з зарплати в Литві: ${getMiddleTaxes.call(litva)}</p>
     <p>3. Податки повні в Україні: ${getTotalTaxes.call(ukraine)}</p>
+    <p>Податки повні в Латвії: ${getTotalTaxes.call(latvia)}</p>
+    <p>Податки повні в Литві: ${getTotalTaxes.call(litva)}</p>
     <p>4. В консолі виводиться getMySalary</p>
 `
