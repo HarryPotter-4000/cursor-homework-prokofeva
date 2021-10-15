@@ -90,3 +90,24 @@ function getBestStudent(students) {
 }
 const bestStudent = getBestStudent(students);
 console.log(`5 задание: ${bestStudent} - кращий студент`);
+
+
+// Tatiana Simchenko
+const getBestStudent = (students) => {
+  return students.reduce((a, b) =>
+    getAverageMark(a) > getAverageMark(b) ? a : b
+  ).name;
+};
+
+console.log(getBestStudent(students));
+
+// Eugenia
+
+const getBestStudent = (studentsArr) => {
+  const ratedStudents = studentsArr.sort((studentA, studentB) => getAverageMark(studentA) - getAverageMark(studentB));
+  const bestStudent = ratedStudents[ratedStudents.length - 1];
+
+  return bestStudent.name;
+}
+
+const bestStudent = getBestStudent(students);
