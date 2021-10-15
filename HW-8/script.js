@@ -44,10 +44,8 @@ getMySalary();
 
 const result = document.querySelector('.result');
 result.innerHTML = `
-  <ol>
-    <li>Податки з 1000 гр в Україні: ${getMyTaxes.call(ukraine, 1000)}</li>
-    <li>Податки з зарплати в Україні: ${getMiddleTaxes.call(ukraine)}</li>
-    <li>Податки повні в Україні: ${getTotalTaxes.call(ukraine)}</li>
-    <li>В консолі виводиться getMySalary</li>
-  </ol>
+    <p>1. Податки з 1000 гр в Україні: ${getMyTaxes.call(ukraine, 1000)}</p>
+    <p>2. Податки з зарплати в Україні: ${getMiddleTaxes.call(ukraine)}</p>
+    <p>3. Податки повні в Україні: ${getTotalTaxes.call(ukraine)}</p>
+    <p>4. В консолі виводиться getMySalary</p>
 `

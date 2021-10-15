@@ -1,23 +1,21 @@
 body {
   box-sizing: border-box;
-  background-color: rgb(11, 11, 105);
+  background-color: rgb(7, 7, 87);
+}
+.img {
+  height: 200px;
   background-image: url(./img/nasa-logo-web-rgb.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.result {
+.result p {
   font-family:Arial, Helvetica, sans-serif;
   font-size: 12px;
   margin: 0 auto;
-  padding: 150px 8px 0;
+  padding: 24px 8px 0;
   width: 350px;
   color: white;
   line-height: 150%;
-}
-ol {
-  padding: 16px;
-}
-li {
-  padding-bottom: 16px;
+  text-align: center;
 }
