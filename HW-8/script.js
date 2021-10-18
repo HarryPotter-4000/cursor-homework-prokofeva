@@ -31,9 +31,9 @@ const printRandomSalaryPerCountry = function () {
   const taxes = +(salary * this.tax).toFixed(2);
   const profit = +(salary - taxes).toFixed(2);
   const result = {
-    'salary': salary,
-    'taxes': taxes,
-    'profit': profit,
+    salary,
+    taxes,
+    profit,
   };
   console.log(result);
 }
