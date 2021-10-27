@@ -121,3 +121,52 @@ const newName = map.call(name, eachLetter => {
 })
 
 console.log(newName)
+
+
+
+// function generateBlocks() {
+//   const body = document.querySelector('body');
+//   const div = document.createElement('div');
+//   div.style.width ='260px';
+//   div.style.display = 'flex';
+//   div.style.flexWrap = 'wrap';
+//   div.style.justifyContent = "flex-start";
+//   for (let k = 1; k <= 5; k++) {
+//     const row = document.createElement('div');
+//     row.style.display = 'flex';
+//     row.style.justifyContent = "flex-start";
+//     for (let i = 1; i <= 5; i++) {
+//       const square = document.createElement('div');
+//       square.style.width = '50px';
+//       square.style.height = '50px';
+//       square.style.background = '#' + (Math.floor(Math.random() * 16777216).toString(16));
+//       row.appendChild(square);
+//     }
+//   div.appendChild(row);
+//   }
+//   body.appendChild(div); 
+// };
+
+// function generateBlocksInterval() {
+//   setInterval(() => {
+//     generateBlocks();
+//   }, 10000);
+// }
+// generateBlocksInterval();
+
+
+// const button = document.createElement('button');
+// button.style.color = 'red';
+// body.appendChild(button);
+// button.addEventListener("click", generateBlocks);
+
+// for(let i = 5; i > 0; i--) generateBlocks();
+// generateBlocks();
+
+// const result = document.querySelector('.result');
+// result.innerHTML = `
+//   <p>${JSON.stringify(katerina.getInfo())}</p>
+//   <p>Оцінки ${katerina.marks}</p>
+//   <p>Середній бал ${katerina.getAverageMark()}</p>
+//   <p>Ви отримали 1400 грн. стипендії</p>
+// `
