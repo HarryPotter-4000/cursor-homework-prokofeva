@@ -103,24 +103,24 @@ console.log(getBestStudent(students));
 
 // Eugenia
 
-const getBestStudent = (studentsArr) => {
-  const ratedStudents = studentsArr.sort((studentA, studentB) => getAverageMark(studentA) - getAverageMark(studentB));
-  const bestStudent = ratedStudents[ratedStudents.length - 1];
+// const getBestStudent = (studentsArr) => {
+//   const ratedStudents = studentsArr.sort((studentA, studentB) => getAverageMark(studentA) - getAverageMark(studentB));
+//   const bestStudent = ratedStudents[ratedStudents.length - 1];
 
-  return bestStudent.name;
-}
+//   return bestStudent.name;
+// }
 
-const bestStudent = getBestStudent(students);
+// const bestStudent = getBestStudent(students);
 
 
-const name = "Sammy"
-const map = Array.prototype.map
+// const name = "Sammy"
+// const map = Array.prototype.map
 
-const newName = map.call(name, eachLetter => {
-    return `${eachLetter}a`
-})
+// const newName = map.call(name, eachLetter => {
+//     return `${eachLetter}a`
+// })
 
-console.log(newName)
+// console.log(newName)
 
 
 
