@@ -170,3 +170,23 @@ console.log(newName)
 //   <p>Середній бал ${katerina.getAverageMark()}</p>
 //   <p>Ви отримали 1400 грн. стипендії</p>
 // `
+// 13
+// function getRandomChinese(length) {
+//   return new Promise((resolve) => {
+//     let stringInChinese = '';
+//     let i = 1;
+
+//     while (i < length) {
+//       setTimeout(() => {
+//         let timeInMs = Date.now();
+//         let chineseLetter = String.fromCharCode(timeInMs).substr( -5 );
+//         console.log(chineseLetter);
+//         stringInChinese = stringInChinese + chineseLetter;
+//         resolve(stringInChinese);
+//       }, i * 50);
+//       i++;
+//     }
+    
+//   });
+// }
+// getRandomChinese(4).then(result => console.log(result));

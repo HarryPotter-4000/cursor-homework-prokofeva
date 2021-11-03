@@ -1,0 +1,22 @@
+body{
+  background: url(img/Badaling_China_Great-Wall-of-China-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px){
+  body{
+    background-size: auto;
+  }
+}
+div {
+  margin-top: 200px;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  font-size: 64px;
+  color: chartreuse;
+  text-shadow: 1px 1px 2px #ffffff, 1px 0 0 honeydew;
+}
