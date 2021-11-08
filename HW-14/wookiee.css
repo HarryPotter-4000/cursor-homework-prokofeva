@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+  background: url(img/6189439f952df.png) no-repeat top center;
+
+  margin: 16px;
+}
+@media (max-width: 768px){
+  body{
+    background: url(img/phone.png) no-repeat top center;
+
+    margin: 16px;
+  }
+}
+.menu {
+  text-align: center;
+}
+.characters {
+  margin: 24px 0;
+}
+#characterList {
+  text-align: center;
+}
+#characterList>div {
+  margin: 16px 8px;
+  border: 1px solid #CCC;
+  width: 250px;
+  display: inline-block;
+  background-color: #F6EFD2;
+}
+.character ul {
+  list-style: none;
+  padding: 8px;
+}
+.character ul li {
+  line-height: 24px;
+}
+
+#planetList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.planet {
+  color: #F6EFD2;
+  padding: 12px;
+  border: 1px solid #CEAD78;
+  border-radius: 50px;
+  margin: 8px 16px;
+  background: linear-gradient(to right, #F6EFD2, #CEAD78);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+button {
+  color: #07577c;
+  border: 1px solid transparent;
+}
+input {
+  color: #07577c;
+  background-color: #F6EFD2;
+  margin-right: 8px;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  box-shadow: #CEAD78 0px 1px 2px;
+}
+#loadDataButton {
+  background-color: #F6EFD2;
+  padding: 6px;
+  border-radius: 4px;
+  box-shadow: #CEAD78 0px 1px 2px;
+}
+.arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#previousPlanetsButton,
+#nextPlanetsButton {
+  background-color: #F6EFD2;
+  padding: 6px;
+  border-radius: 4px;
+  box-shadow: #CEAD78 0px 1px 2px;
+  margin: 8px;
+}
+h2 {
+  color: #F6EFD2;
+  font-size: 36px;
+  text-align: center;
+}

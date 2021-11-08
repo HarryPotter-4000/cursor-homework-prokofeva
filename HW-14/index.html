@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Wookiee</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wookiee.css">
+  </head>
+
+  <body>
+    <div class="characters">
+      <div class="menu">
+        <input id="filmIdField" type="number" value="2" min="1" max="6">
+        <button id="loadDataButton">Отримати інформацію про фільм</button>
+      </div>
+      
+      <h2 id="filmTitle"></h2>
+      <div id="characterList"></div>
+    </div>
+    <div class="planets">
+      <h2>Планети</h2>
+      <div id="planetList"></div>
+      <div class="arrows">
+        <button id="previousPlanetsButton">⬅️</button>
+        <button id="nextPlanetsButton">➡️</button>
+      </div>
+
+    </div>
+    <script src="wookiee.js"></script>
+  </body>
+</html>
