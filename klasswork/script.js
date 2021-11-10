@@ -190,3 +190,254 @@ console.log(newName)
 //   });
 // }
 // getRandomChinese(4).then(result => console.log(result));
+
+
+//------------------------------------pattern js
+// const generateColoredBlocks = () => {
+//     createOneBlock();
+//     changeBlockColors();
+// }
+// const generateRandomNumber = () => {
+//     return 5;
+// };
+//
+// const generateRandomArray = (length) => {
+//     const newArray = new Array(length);
+//     return newArray.map(() => {
+//         return generateRandomNumber();
+//     })
+// }
+//
+// if(turnOn && miles > 100 && fuel < 3500){
+//     console.log("okay");
+// }
+//
+//
+// if(turnOff && miles > 250 && fuel < 1500){
+//     console.log("okay");
+// }
+//
+// if(turnOn && miles > 100 && fuel < 3500){
+//     console.log("okay");
+// }
+//
+// 'superpassword'
+// 3.141592653589;
+// a * b * c * d ** 2 / 2
+//
+// const MAX_DISTANCE = 1000;
+// const MAX_FILE_SIZE = 1024 * 100 * 100; // 100MB
+//
+// if(file.size < MAX_FILE_SIZE){
+//
+// }
+//
+//
+// const makeOrder = () => {
+//     const total = calcTotalSum(); // 1000
+//     const totalWithTaxes = addTaxes(); // 1200
+//     const totalWithDiscount = makeDiscount(); // 1200 - 120 = 1080
+//     const totalInUsd = changeCurrency(); // 1080 / 26.5
+// }
+//
+// const calcTotalSum = () => {};
+// const makeDiscount = () => {};
+// const changeCurrency = () => {};
+// const addTaxes = () => {};
+//
+// let cart = [];
+// const clearCartAndSaveToDB = (cart) => {
+//     localStorage.setItem("oldCart", JSON.stringify(cart));
+//     cart = [];
+// }
+// // 1 очистка корзины для интерфейса
+// // 2 сохранения данных в базе данных
+//
+// const calcSumWithDiscount = (products, discount = 0) => {
+//     const total = products.reduce((total, p) => total +  (p.price * p.count));
+//     return total * 1 - discount;
+// }
+//
+// // 11
+// const generatePassword = () => {
+//     return '1234';
+// }
+//
+// const generatePasswordWithLetters = () => {
+//     const numberPassword = generatePassword();
+//     return 'aa@_' + numberPassword + '$%^&*';
+// }
+//
+class Vehicle {
+  speed = 100
+  static getRoadTime(vehicle, distance){
+      return distance / vehicle.speed;
+  }
+}
+
+class WorkingVehicle extends Vehicle {
+  addFuel(){
+      return 'FUEL IS ADDED';
+  }
+}
+
+class Truck extends WorkingVehicle{
+  weight = 100;
+}
+
+class Bus extends WorkingVehicle{
+  seats = 50;
+};
+
+class BrokenCar extends Vehicle{
+  speed = 'none'
+}
+
+const car = new Vehicle();
+const truck = new Truck();
+const bus = new Bus();
+const brokenCar = new BrokenCar();
+
+const course = {};
+const teacher = {};
+
+const createTeacher = (teacherName, teacherPhone, teacherEmail) => {
+  teacher.name = teacherName;
+  teacher.phone = teacherPhone;
+  teacher.email = teacherEmail;
+}
+
+const createCourse = (name, duration) => {
+  course.name = name;
+  course.duration = duration;
+}
+
+const initiateCourse = (form) => {
+  createCourse(form.courseName, form.courseDuration);
+  createTeacher(form.teacherName, form.teacherPhone, form.teacherEmail);
+}
+
+const data = {
+  total: 300
+}
+
+const calcSumWithDiscount = (products, discount = 0) => {
+  const total = products.reduce((total, p) => total +  (p.price * p.count), 0);
+  return total * (1 - discount);
+}
+
+const memento = {
+
+};
+const changeCurrency = (total) => {
+  if(!isFinite(parseInt(total))){
+      throw new Error("Number is not correct");
+  }
+  if(memento[total]){
+      return memento[total];
+  }
+  const result = total / 26.5;
+  memento[total] = result;
+  return result;
+}
+
+changeCurrency(calcSumWithDiscount([{ price: 100, count: 10 }]));
+
+const tree = [{
+  id: '1ed-23a',
+  name: "Vlad",
+  children: [{
+      id: '1ed-23a-f43',
+      name: "Vlad2"
+  }]
+}];
+
+const simpleSet = new Set([1, 2, 3, 4, 5, 2, 3, 4, 1, 67, 13, 53, 2]);
+
+const products = [{
+  size: 'XL'
+}, {
+  size: 'L'
+}, {
+  size: 'M'
+}, {
+  size: 'XL'
+}];
+
+const sizes = new Set();
+products.forEach((product) => {
+  if(sizes.has(product.size)){
+    sizes.delete(product.size);
+  }  else {
+      sizes.add(product.size);
+  }
+});
+
+
+class HashTable {
+  map = new WeakMap()
+  set(name, value){
+      const hashValue = this.hash(name);
+      this.map.set(hashValue, value);
+  }
+
+  delete(name){
+      const hashValue = this.hash(name);
+      this.map.delete(hashValue);
+  }
+
+  get(name){
+      const hashValue = this.hash(name);
+      return this.map.get(hashValue);
+  }
+
+  hash(name){
+      return new Number(name.toUpperCase().split("").map((letter) => letter.charCodeAt(0)).join(""));
+  }
+}
+
+const table = new HashTable();
+table.set("Vlad", ['How cook potato?', 'How cook batat?']);
+table.set("Vitaliy", ['Как ввести лохдаун?', 'Что будет если месяц не ходить в кино?']);
+console.log(table.get("Vitaliy"));
+
+
+const singleton = {
+  name: "Test"
+};
+
+class Singleton {
+  constructor() {
+      if(Singleton.isCreated){
+          throw new Error(`Already exist`);
+      }
+      Singleton.isCreated = true;
+  }
+}
+
+// new Singleton();
+// new Singleton();
+
+
+document.addEventListener("calcTotal", () => {
+  document.dispatchEvent(new Event("makeDiscount", 1000));
+});
+
+document.addEventListener("makeDiscount", () => {
+  document.dispatchEvent("addTaxes");
+});
+
+
+const events = {
+  "#button": (event) => {
+      console.log("#button");
+  },
+  "#text": (event) => {
+      console.log("#text");
+  }
+};
+
+document.body.addEventListener("click", (event) => {
+  const id = event.target.id;
+  events?.['#' + id]?.(event);
+})
