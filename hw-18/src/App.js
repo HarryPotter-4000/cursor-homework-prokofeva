@@ -17,11 +17,11 @@ function App() {
     <Card
       name={ author.name }
       nickname={ author.nickname }
-      content={author.content}
-      date={author.date}
-      comment={author.comment}
-      retweet={author.retweet}
-      likes={author.likes}/>
+      content={ author.content }
+      date={ author.date }
+      comment={ author.comment }
+      retweet={ author.retweet }
+      likes={ author.likes }/>
   );
 }
 
