@@ -1,0 +1,87 @@
+.container {
+  box-sizing: border-box;
+  padding: 16px 16px;
+  background-color: #15202b;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: sans-serif;
+  width: 600px;
+  margin: 0 auto;
+}
+.avatar {
+  width: 10%;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 0 8px;
+}
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 0 4px;
+}
+.name {
+  width: 42%;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+}
+.check {
+  color: white;
+  margin: 0 4px 0 0; 
+}
+.nickname {
+  width: 20%;
+  color: #8899a6;
+  margin: 0 4px 0 0;
+}
+.date {
+  width: 25%;
+  color: #8899a6;
+  margin: 0;
+}
+.arrow {
+  color: #8899a6;
+  margin: 0;
+  width: 50%;
+  text-align: right;
+}
+.content {
+  color: white;
+}
+.photo {
+  width: 100%;
+  border-radius: 8px;
+  margin: 0 0 8px;
+}
+.socials {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #8899a6;
+}
+p {
+  margin: 0;
+}
+i {
+  margin-right: 8px;
+}
