@@ -1,0 +1,27 @@
+.container {
+  box-sizing: border-box;
+  width: 300px;
+  margin: 0 auto;
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+h1 {
+  margin: 0;
+  color:rgb(62, 63, 63);
+}
+input {
+  box-sizing: border-box;
+  margin: 16px;
+  border-radius: 4px;
+  width: 150px;
+  font-size: 18px;
+  padding: 4px;
+  border: 1px solid transparent;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+  rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
