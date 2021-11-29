@@ -6,8 +6,8 @@ function App() {
 
   return (
     <div className="App">
-      <Timer startTime='200000' step='1' />
-      <Timer startTime='100000' step='2'/>
+      <Timer startTime='60000' step='1' />
+      <Timer startTime='60000' step='2'/>
     </div>
   );
 }
