@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "./static/css/main.c7a2e49c.chunk.css",
+    "main.js": "./static/js/main.1b4aaef1.chunk.js",
+    "main.js.map": "./static/js/main.1b4aaef1.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.ba303030.js",
+    "runtime-main.js.map": "./static/js/runtime-main.ba303030.js.map",
+    "static/css/2.047e3a3a.chunk.css": "./static/css/2.047e3a3a.chunk.css",
+    "static/js/2.780ddec9.chunk.js": "./static/js/2.780ddec9.chunk.js",
+    "static/js/2.780ddec9.chunk.js.map": "./static/js/2.780ddec9.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/2.047e3a3a.chunk.css.map": "./static/css/2.047e3a3a.chunk.css.map",
+    "static/css/main.c7a2e49c.chunk.css.map": "./static/css/main.c7a2e49c.chunk.css.map",
+    "static/js/2.780ddec9.chunk.js.LICENSE.txt": "./static/js/2.780ddec9.chunk.js.LICENSE.txt",
+    "static/media/BB-8.720eb5dc.jpg": "./static/media/BB-8.720eb5dc.jpg",
+    "static/media/a-anakin.950658a6.jpg": "./static/media/a-anakin.950658a6.jpg",
+    "static/media/a-chwe.152c4c8e.jpg": "./static/media/a-chwe.152c4c8e.jpg",
+    "static/media/a-yoda.ad685d9d.jpg": "./static/media/a-yoda.ad685d9d.jpg",
+    "static/media/bb8contact.8839f217.jpg": "./static/media/bb8contact.8839f217.jpg",
+    "static/media/c3po.ff245449.png": "./static/media/c3po.ff245449.png",
+    "static/media/all.css": "./static/media/fa-solid-900.eeccf4f6.woff",
+    "static/media/gallery-1.c9eadf9f.jpg": "./static/media/gallery-1.c9eadf9f.jpg",
+    "static/media/gallery-2.a41087d0.jpg": "./static/media/gallery-2.a41087d0.jpg",
+    "static/media/gallery-3.ceea5977.jpg": "./static/media/gallery-3.ceea5977.jpg",
+    "static/media/gallery-4.16f9f5ce.jpg": "./static/media/gallery-4.16f9f5ce.jpg",
+    "static/media/gallery-5.5372d581.jpg": "./static/media/gallery-5.5372d581.jpg",
+    "static/media/gallery-6.f6217477.jpg": "./static/media/gallery-6.f6217477.jpg",
+    "static/media/gallery-7.5cd5ac99.jpg": "./static/media/gallery-7.5cd5ac99.jpg",
+    "static/media/gallery-8.1ea7405a.jpg": "./static/media/gallery-8.1ea7405a.jpg",
+    "static/media/manda.d87cf408.png": "./static/media/manda.d87cf408.png",
+    "static/media/mandalorian.f6122f79.jpg": "./static/media/mandalorian.f6122f79.jpg",
+    "static/media/ray.19025a32.jpg": "./static/media/ray.19025a32.jpg",
+    "static/media/ray2.04820042.jpg": "./static/media/ray2.04820042.jpg",
+    "static/media/reycontact.5b73f7b8.png": "./static/media/reycontact.5b73f7b8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ba303030.js",
+    "static/css/2.047e3a3a.chunk.css",
+    "static/js/2.780ddec9.chunk.js",
+    "static/css/main.c7a2e49c.chunk.css",
+    "static/js/main.1b4aaef1.chunk.js"
+  ]
+}
