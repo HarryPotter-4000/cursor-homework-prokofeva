@@ -1,5 +1,5 @@
 import styles from "./styles.module.css"
-import mandalorian from "../assets/mandalorian.jpg"
+import mandalorian from "../assets/img/mandalorian.jpg"
 
 function HomePage() {
   return (

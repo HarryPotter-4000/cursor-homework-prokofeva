@@ -1,12 +1,12 @@
 import React from "react";
 import Card from "../components/Cards/Card";
 import styles from "./styles.module.css"
-import avatarAnakin from "../assets/a-anakin.jpg"
-import avatarChwe from "../assets/a-chwe.jpg"
-import avatarYoda from "../assets/a-yoda.jpg"
-import ray from "../assets/ray.jpg"
-import bb8 from "../assets/BB-8.jpg"
-import ray2 from "../assets/ray2.jpg"
+import avatarAnakin from "../assets/img/a-anakin.jpg"
+import avatarChwe from "../assets/img/a-chwe.jpg"
+import avatarYoda from "../assets/img/a-yoda.jpg"
+import ray from "../assets/img/ray.jpg"
+import bb8 from "../assets/img/BB-8.jpg"
+import ray2 from "../assets/img/ray2.jpg"
 
 const authors = [
   {

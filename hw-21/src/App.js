@@ -20,7 +20,7 @@ function App() {
         <Route path="/contacts" element={ <ContactsPage title='Contacts' /> } />
         <Route path="/gallery" element={ <GalleryPage title='Gallery' /> } />
         <Route path="/starwars" element={ <StarWarsPage title='Star Wars' /> } />
-        <Route path="/" element={<HomePage />} />
+        <Route path="/home" element={ <HomePage title='Home'/> } />
       </Routes>
     </Router>
   );

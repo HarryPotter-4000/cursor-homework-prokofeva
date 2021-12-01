@@ -1,12 +1,12 @@
 import React from "react";
 import ContactStyles from '../Contacts/Contacts.module.css'
 import ContactCard from "./ContactCard"
-import Mandalorian from "../../assets/manda.png"
-import Yoda from "../../assets/a-yoda.jpg"
-import Chewbacca from "../../assets/a-chwe.jpg"
-import Rey from "../../assets/reycontact.png"
-import BB8 from "../../assets/bb8contact.jpg"
-import C3PO from "../../assets/c3po.png"
+import Mandalorian from "../../assets/img/manda.png"
+import Yoda from "../../assets/img/a-yoda.jpg"
+import Chewbacca from "../../assets/img/a-chwe.jpg"
+import Rey from "../../assets/img/reycontact.png"
+import BB8 from "../../assets/img/bb8contact.jpg"
+import C3PO from "../../assets/img/c3po.png"
 
 const contacts = [
   {
