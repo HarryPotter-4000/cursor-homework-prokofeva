@@ -1,12 +1,12 @@
-import styles from "../pages/styles.module.css"
-import mandalorian from "../assets/gallery-1.jpg"
-import babyYoda from "../assets/gallery-2.jpg"
-import leia from "../assets/gallery-3.jpg"
-import padme from "../assets/gallery-4.jpg"
-import dart from "../assets/gallery-5.jpg"
-import r2d2 from "../assets/gallery-6.jpg"
-import ewok from "../assets/gallery-7.jpg"
-import bossNaas from "../assets/gallery-8.jpg"
+import styles from "./styles.module.css"
+import mandalorian from "./img/gallery-1.jpg"
+import babyYoda from "./img/gallery-2.jpg"
+import leia from "./img/gallery-3.jpg"
+import padme from "./img/gallery-4.jpg"
+import dart from "./img/gallery-5.jpg"
+import r2d2 from "./img/gallery-6.jpg"
+import ewok from "./img/gallery-7.jpg"
+import bossNaas from "./img/gallery-8.jpg"
 
 
 function GalleryPage() {
