@@ -14,13 +14,13 @@ import Header from './components/Header/Header'
 
 function App() {
   return (
-        <Router>
+    <Router>
       <Header />
       <Routes>
+        <Route path="/" element={ <HomePage title='Home'/> } />
         <Route path="/contacts" element={ <ContactsPage title='Contacts' /> } />
         <Route path="/gallery" element={ <GalleryPage title='Gallery' /> } />
         <Route path="/starwars" element={ <StarWarsPage title='Star Wars' /> } />
-        <Route path="/home" element={ <HomePage title='Home'/> } />
       </Routes>
     </Router>
   );

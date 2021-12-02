@@ -19,7 +19,7 @@
   flex-direction: row;
   list-style: none;
 }
-.list li a{
+.list li a {
   font-family: sans-serif;
   font-size: 19px;
   font-weight: 600px;
@@ -28,10 +28,7 @@
   text-decoration: none;
   color: rgb(95, 92, 92);
 }
-.list li a:hover {
-  color: tomato;
-}
-.active {
+.list li a:hover, .list li a.active {
   color: tomato;
 }
 @media (max-width: 601px) {
